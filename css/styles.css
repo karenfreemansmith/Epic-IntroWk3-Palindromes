@@ -1,12 +1,11 @@
-body {
+body, .btn {
   background-color: #e60033;
 }
-h1 {
-  background-color: #009918;
-  color: white;
-  font-size: 4em;
-  line-height: 4em;
+div {
+  background-color: white;
+  margin-top: 2%;
+  color: #009918;
   text-align: center;
-  font-family: cursive;
   border-radius: 25px;
+  padding: 25px;
 }
