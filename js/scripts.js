@@ -5,8 +5,11 @@ $(document).ready(function(){
     var pp = $("#word").val().toUpperCase(); //pp=potential palendrome
     if(!palindrome(pp)) {
       var result= "No, it is not a palindome";
+      var randomNumber=(Math.floor(Math.random() * (8 - 1)) + 1);
+      $("div.wrong").html("<img src='img/palindrome"+ randomNumber +".jpg' class='img-responsive'>");
     } else {
       var result= "Yes, it is a palindrome";
+      $(".wrong").html("");
     }
     $("h1").text(result).fadeIn();
   });
