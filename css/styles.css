@@ -1,0 +1,11 @@
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+}
+
+.jumbotron {
+  background-color: rgba(200,200,200, .6);
+  margin-top: 40%;
+  width: 60%;
+  margin-left: 60%;
+}

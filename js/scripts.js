@@ -1,11 +1,11 @@
 $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
-    var pp = $("#word").val(); //pp=potential palendrome
+    var pp = $("#word").val().toUpperCase(); //pp=potential palendrome
     if(!palindrome(pp)) {
-      var result= "no";
+      var result= "No, it is not a palindome";
     } else {
-      var result= "yes";
+      var result= "Yes, it is a palindrome";
     }
     $("h1").text(result);
   });
